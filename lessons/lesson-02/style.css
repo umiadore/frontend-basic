@@ -1,0 +1,43 @@
+/* Символ звездочки - это выбор всех элементов */
+*{
+color: darkgreen;
+}
+
+
+
+h1 {
+color: darkslateblue;
+text-align: center;
+}
+p{
+    text-align: center;
+    color: tomato;
+}
+
+.blue-text {
+    color: rgb(0, 0, 164);
+}
+
+.css-heading {
+    font-weight: bold;
+    font-size: 18px;
+    color: darkslateblue;
+}
+
+.css-link {
+    text-decoration: none;
+    color: rgb(208, 10, 181);
+}
+
+.img-no-inline {
+    width: 380px;
+}
+
+.css-list-item {
+    font-style: italic;
+    color:rgb(229, 138, 147);
+}
+.css-priority {
+    text-decoration: underline;
+    color: rgb(255, 61, 61);
+}
