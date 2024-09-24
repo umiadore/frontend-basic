@@ -1,0 +1,16 @@
+
+.container {
+   display: flex;  /* как только мы добавляем такое свойство, все идет по горизонтали */
+   justify-content: space-between; /* свойство выравнивания по главной оси */
+   align-items: center; /* свойство выравнивания для поперечной оси */
+    width: 100%;
+    min-height: 250 px;
+    background-color: rgb(153, 221, 255);
+}
+
+.container > div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(209, 160, 255);
+}
