@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+.movie {
+  width: fit-content;
+  height: fit-content;
+}
+
+.high-rated-movie {
+  height: 400px;
+  width: fit-content;
+}
+
+.high-rate {
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(59, 179, 58);
+  width: 35px;
+  height: 35px;
+}
+
+.low-rated-movie {
+  margin-top: 20px;
+  height: 400px;
+  width: fit-content;
+}
+
+.low-rate {
+  position: absolute;
+  z-index: 1;
+  bottom: 225px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 0, 0);
+  width: 35px;
+  height: 35px;
+}
+
+.high-rate-ticket-button {
+  position: absolute;
+  z-index: 1;
+  top: 365px;
+  right: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 86, 0);
+  width: 83px;
+  height: 35px;
+}
+
+.low-rate-ticket-button {
+  position: absolute;
+  z-index: 1;
+  bottom: -110px;
+  right: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 86, 0);
+  width: 83px;
+  height: 35px;
+}

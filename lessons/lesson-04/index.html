@@ -11,13 +11,47 @@
     <p>Flexbox - это гибкая технология для позиционирования элементов в CSS</p>
     <ul>
         <li>Чтобы "включить" flex отображение в контейнере, нужно задать свойство display:flex</li>
+        <li>Justify-Content - свойство выравнивания по главной оси</li>
+        <li>Align-Items- свойство выравнивания по поперечной оси</li>
+        <li>gap - значение промежутка между флекс - элементами</li>
+        <li>align-content - управления свойствами выравнивания поперечной оси при переносе строк через flex-wrap </li>
     </ul>
+    <h3>Пример 1:</h3>
+
     <div class="container">
+        <div class="item">
+            <h5>item 1</h5>
+            <p>flex</p>
+        </div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
-        <div class="item"></div>
+    </div>
+
+    <h3>Пример 2:</h3>
+    <div class="container2">
+        <div class="container2_item">
+            first
+        </div>
+        <div class="container2_item"></div>
+        <div class="container2_item"></div>
+        <div class="container2_item"></div>
+        <div class="container2_item"></div>
+        <div class="container2_item"></div>
+        <div class="container2_item"></div>
+        <div class="container2_item"></div>
+        <div class="container2_item"></div>
+        <div class="container2_item">
+            last
+        </div>
+    </div>
+    <h3>Пример 3:</h3>
+    <div class="flex-card">
+        <h4>HUAWEI MateBook D 16 2024 12th Gen Core i5 8GB+512GB 16 inches Mystic Silver</h4>
+        <p>The upgraded Multi-screen Collaboration feature supports simultaneous display of multiple phone apps on your notebook.  The brand new powerhouse improves its CPU performance by 22% compared with the last generation.</p>
+        <img src="./laptop.png" alt="HUAWEI MateBook D 16 2024">
+
     </div>
 </body>
 </html>

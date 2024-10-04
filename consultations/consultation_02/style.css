@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body, hmtl {
+    background-color: #191919;
+    width: 100%;
+    height: 100%;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+}
+/* a - для каждой ссылки в данном случае */
+a {
+    color: white;
+    text-decoration: none ;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main{
+    flex: 1;
+}
+
+header {
+    padding:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logo-header {
+    font-size: 32px;
+} 
+nav {
+    display: flex;
+    align-items: center;
+    gap:40px ;
+}  
+
+.latest-episode-section {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 50px 110px 50px;
+}
+.section-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.latest-episode-title{
+    font-size: 64px;
+}
+
+.main-button {
+    padding: 12px 19px;
+    font-size: 17px;
+    border: none;
+    color: white;
+    background-color: #118da8;
+    border-radius: 6px;
+    font-family: "DM Sans", sans-serif;
+}
+.episode-card {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 110px 0 135px;
+    background-color: black;
+    border-radius: 32px;
+    padding: 40px;
+}
+.episode-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

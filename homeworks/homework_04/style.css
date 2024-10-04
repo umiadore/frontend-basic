@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 400vh;
+}
+
+header {
+  width: 100%;
+  min-height: 80px;
+  padding: 20px 0 15px;
+  background-image: url(imagebanner.jpeg);
+  background-position: center;
+  background-size: cover; /* правило, чтобы картинка покрывала весь контейнер */
+  display: flex;
+  justify-content: center;
+}
+
+/* */
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  align-items: end;
+}
+.logo {
+  height: 30px;
+  cursor: pointer;
+}
+
+.logo-pointer{
+  opacity: 0.8;
+}
+
+.nav-conteiner {
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 50%;  /* плотность элемента, transparency */
+
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+input {
+  border: none;
+  border-radius: 3px;
+  outline: none;  /* убрали подсветку в режиме наведения в input */
+  opacity: 50%;
+  padding: 3px;
+}
