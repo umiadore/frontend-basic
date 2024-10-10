@@ -200,7 +200,13 @@ background-repeat: no-repeat;
 }
 
 /* ---------------------------------------------*/
+
+.footer-content-container{
+  display: flex;
+}
 footer {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   color: white;
   background-color: #545454;
