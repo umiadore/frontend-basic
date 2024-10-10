@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <!-- 2 способ подключения JS файла - внутри head c атрибутом defer. defer обязателен, чтобы js заработал в самом конце  -->
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h2>Lesson 09.</h2>
+    <p id="desc">DOM - Document Object Model</p>
+    <p>Все элементы в на странице можно представить в виде глобального объекта document</p>
+    <p>Чтобы находить элементы в DOM нужно добавить им что-то уникальное, какую-то отличительную особенность, например класс или id:</p>
+    <ul class="method-list">
+        <li>По тегам - <span>getElementsByTagName()</span></li>
+        <li>По классам - <span>getElementsByClassName()</span></li>
+        <li>По id - <span>getElementById()</span></li>
+    </ul>
+
+  </body>
+</html>

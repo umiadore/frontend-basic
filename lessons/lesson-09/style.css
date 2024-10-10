@@ -1,0 +1,12 @@
+.method-list span {
+  color: black;
+  font-weight: bold;
+}
+.desc {
+    color: darkred;
+}
+
+.method-list {
+    list-style-type: none;
+    color: rgb(11, 66, 11);
+}
