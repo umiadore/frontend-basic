@@ -101,16 +101,8 @@ body {
   text-shadow: 50px; /* did not work out somehow????*/
 }
 /* ---------------------------------------------*/
-.card-image {
-  width: 100%;
-  height: 234.98px;
-  background-repeat: no-repeat;
-  background-size:cover;
-  display: flex;
-  justify-content: right;
-}
 .articles-section {
-  padding: 90px 110px;
+  padding: 90px 100px;
 }
 
 .articles-section > h2 {
@@ -119,8 +111,32 @@ body {
   margin-bottom: 16.5px;
   display: flex;
   flex-direction: column;
-
 }
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  min-height: 350px;
+  margin-bottom: 85px;
+}
+
+.grid-card {
+  position: relative;
+  width: 313.33px;
+  background-size: contain;
+background-repeat: no-repeat;
+}
+
+.card-image {
+  width: 100%;
+  height: 234.98px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  justify-content: right;
+}
+
 
 .copywrite-icon {
   font-weight: 400;
@@ -143,11 +159,11 @@ body {
 
 .description-section a {
   color: #0047D3;
-  display: flex;
-
 }
-
-
+.arrow-blue {
+  font-size: 12.5px;
+  padding-left: 3px;
+}
 
 .arrow {
   z-index: 1;
@@ -160,45 +176,39 @@ body {
  
 }
 
-.grid-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  min-height: 350px;
-  margin-bottom: 85px;
-}
-
-.grid-card {
-  position: relative;
-  width: 313.33px;
-  background-size: contain;
-background-repeat: no-repeat;
-}
-
-
 /* ---------------------------------------------*/
+.nav-bottom-section {
+  background-color: #F5F5F5;
+  padding: 30px 59px 58px 100px; /*top right bottom left*/
+}
+
 .nav-bottom-heading {
   display: flex;
   align-items: center;
   justify-content: end;
   line-height: 24px;
+  gap: 6px;
 }
 .arrow-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   background-color: #e40422;
   width: 24px;
   height: 24px;
 }
 
+.bottom-items-wrapper { /*это расстояние между навигацией и красной стрелкой с текстом*/
+    display: flex;
+    justify-content: space-between;
+  margin-top: 40px;
+}
+
 .nav-bottom-items {
-  padding-top: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
+  width: 149px;
+  gap: 20px; /*вертикальное расстояние*/
 }
 
 .nav-bottom-items a {
@@ -209,15 +219,8 @@ background-repeat: no-repeat;
   font-weight: bold;
   line-height: 23px;
 }
-.bottom-items-wrapper {
-    display: flex;
-}
-
 /* ---------------------------------------------*/
 
-.footer-content-container{
-  display: flex;
-}
 footer {
   display: flex;
   flex-direction: column;
@@ -226,29 +229,41 @@ footer {
   background-color: #545454;
   width: 100%;
   height: 483px;
+  padding: 30px 59px 58px 35px; /*top right bottom left*/
 }
 
 .logo-footer {
-  padding-top: 17px;
-  padding-left: 24px;
   height: 40px;
 }
 
 .nav-footer-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-left: 5%;
   padding-top: 64px;
 }
 
-.nav-footer-title {
+.nav-footer-items {
+  display: flex;
+  flex-direction: column;
+  width: 149px;
+  gap: 20px; /*вертикальное расстояние*/
+}
+
+.nav-footer-items h4 {
   font-size: 17px;
   font-weight: bold;
   line-height: 23px;
 }
 
-.footer-last-text {
+.nav-footer-items a {
   font-size: 16px;
-  padding: 0px 90px;
+  color: #FFFFFF;
+}
+
+.footer-last-text {
+display: flex;
+justify-content: start;
+padding-left: 100px;
+padding-top: 53px;
 }
