@@ -12,12 +12,15 @@ console.log(personsInfo);
 
 // Задание 2 // Используя пройденные на занятии методы массива получите из этого массива новый массив, в котором элементы идут в обратной последовательности.
 
+// первый метод выполнения задачи: 
 let personsInfoReversed = [];
 
 for (let i = person.length - 1; i >= 0; i--) {
   personsInfoReversed.push(personsInfo[i]);
 }
 console.log(personsInfoReversed);
+
+// второй метод выполнения задачи: personsInfo.reverse();
 
 // Задание 3 // Создайте пустой массив countries. Добавьте в массив следующие страны: "Франция", "Германия", "Италия" Удалите последний элемент из массива и сохраните значение в переменной. Добавьте его в начало массива. Выведите countries в консоль
 
@@ -32,6 +35,8 @@ console.log(lastCountry);
 
 countries.unshift(lastCountry);
 console.log(countries);
+// spread syntaxis 
+// const newCountries = lastCountry,...countries, 'Spain']
 
 // Задание 4 // Создайте объект car с ключами brand, model, year, и isElectric. Задайте им значения.
 // Выведите на экран все ключи объекта
@@ -46,10 +51,24 @@ const car = {
   brand: "maserati",
   model: "xxx",
   year: 2018,
-  isElectric: true,
+  isElectric: true
 };
 
 const getCarInfo = `${car.brand} ${car.model} ${car.year}`;
-
 console.log(getCarInfo);
 
+console.log("_____________");
+// итерация по ключам  и значениям объекта
+// выполните итерацию по ключам с помощью цикла for...in.
+// Внутри цикла выводите на экран каждую пару ключ: значение.
+for (let key in car) {
+  console.log(`key:${key}, value: ${car[key]}`)
+}
+console.log("_____________");
+
+// метод Object.keys() принимает на вход объект и возвращает массив из ключей данного объекта
+console.log(Object.keys(car));
+
+console.log("_____________");
+// метод Object.values() принимает на вход объект и возвращает массив из значений данного объекта
+console.log(Object.values(car));
